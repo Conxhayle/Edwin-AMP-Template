@@ -1,0 +1,18 @@
+[
+    {
+        "UpdateStageName": "Write .env from instance settings",
+        "UpdateSourcePlatform": "Windows",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "powershell.exe",
+        "UpdateSourceArgs": "-NoProfile -Command \"$env_path = Join-Path 'edwin-bot/app' '.env'; $lines = @(); $lines += 'NODE_ENV={{NodeEnv}}'; $lines += 'DISCORD_TOKEN={{DiscordToken}}'; $lines += 'GUILD_ID={{GuildId}}'; if ('{{DiscordClientId}}' -ne '') { $lines += 'DISCORD_CLIENT_ID={{DiscordClientId}}' }; if ('{{DiscordClientSecret}}' -ne '') { $lines += 'DISCORD_CLIENT_SECRET={{DiscordClientSecret}}' }; if ('{{WebpanelOauthRedirect}}' -ne '') { $lines += 'WEBPANEL_OAUTH_REDIRECT={{WebpanelOauthRedirect}}' }; $lines += 'ANTHROPIC_API_KEY={{AnthropicApiKey}}'; if ('{{OpenaiApiKey}}' -ne '') { $lines += 'OPENAI_API_KEY={{OpenaiApiKey}}' }; $lines += 'WEBPANEL_PASSWORD={{WebpanelPassword}}'; $lines += 'WEBPANEL_SESSION_SECRET={{WebpanelSessionSecret}}'; $lines += 'WEBPANEL_BIND={{WebpanelBind}}'; $lines += 'WEBPANEL_PORT={{$ServerPort}}'; $lines += 'VS_MOD_SHARED_SECRET={{VsModSharedSecret}}'; $lines += 'VS_MOD_URL={{VsModUrl}}'; $lines += 'VS_EVENT_PORT={{$VsEventsPort}}'; if ('{{AlertWebhookUrl}}' -ne '') { $lines += 'ALERT_WEBHOOK_URL={{AlertWebhookUrl}}' }; if ('{{GithubToken}}' -ne '') { $lines += 'GITHUB_TOKEN={{GithubToken}}' }; Set-Content -Path $env_path -Value $lines -Encoding utf8; Write-Output 'Wrote .env'\"",
+        "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Write .env from instance settings",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "Executable",
+        "UpdateSourceData": "/bin/bash",
+        "UpdateSourceArgs": "-c \"f=edwin-bot/app/.env; : > $f; echo 'NODE_ENV={{NodeEnv}}' >> $f; echo 'DISCORD_TOKEN={{DiscordToken}}' >> $f; echo 'GUILD_ID={{GuildId}}' >> $f; [[ -n '{{DiscordClientId}}' ]] && echo 'DISCORD_CLIENT_ID={{DiscordClientId}}' >> $f; [[ -n '{{DiscordClientSecret}}' ]] && echo 'DISCORD_CLIENT_SECRET={{DiscordClientSecret}}' >> $f; [[ -n '{{WebpanelOauthRedirect}}' ]] && echo 'WEBPANEL_OAUTH_REDIRECT={{WebpanelOauthRedirect}}' >> $f; echo 'ANTHROPIC_API_KEY={{AnthropicApiKey}}' >> $f; [[ -n '{{OpenaiApiKey}}' ]] && echo 'OPENAI_API_KEY={{OpenaiApiKey}}' >> $f; echo 'WEBPANEL_PASSWORD={{WebpanelPassword}}' >> $f; echo 'WEBPANEL_SESSION_SECRET={{WebpanelSessionSecret}}' >> $f; echo 'WEBPANEL_BIND={{WebpanelBind}}' >> $f; echo 'WEBPANEL_PORT={{$ServerPort}}' >> $f; echo 'VS_MOD_SHARED_SECRET={{VsModSharedSecret}}' >> $f; echo 'VS_MOD_URL={{VsModUrl}}' >> $f; echo 'VS_EVENT_PORT={{$VsEventsPort}}' >> $f; [[ -n '{{AlertWebhookUrl}}' ]] && echo 'ALERT_WEBHOOK_URL={{AlertWebhookUrl}}' >> $f; [[ -n '{{GithubToken}}' ]] && echo 'GITHUB_TOKEN={{GithubToken}}' >> $f; echo Wrote .env\"",
+        "SkipOnFailure": false
+    }
+]

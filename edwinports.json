@@ -1,0 +1,16 @@
+[
+    {
+        "Protocol": "TCP",
+        "Port": 3000,
+        "Ref": "ServerPort",
+        "Name": "Web Panel",
+        "Description": "Edwin staff web panel + /health + /metrics"
+    },
+    {
+        "Protocol": "TCP",
+        "Port": 3001,
+        "Ref": "VsEventsPort",
+        "Name": "VS Events Listener",
+        "Description": "HTTP endpoint the Vintage Story mod posts events to (loopback)"
+    }
+]
