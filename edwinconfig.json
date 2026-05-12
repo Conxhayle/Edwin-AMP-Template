@@ -9,7 +9,10 @@
         "InputType": "number",
         "ParamFieldName": "$.port",
         "DefaultValue": "3000",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": true
     },
     {
         "DisplayName": "VS Events Port",
@@ -21,7 +24,10 @@
         "InputType": "number",
         "ParamFieldName": "$.port",
         "DefaultValue": "3001",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": true
     },
     {
         "DisplayName": "Web Panel Bind Address",
@@ -33,7 +39,10 @@
         "InputType": "text",
         "ParamFieldName": "WebpanelBind",
         "DefaultValue": "127.0.0.1",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": false
     },
     {
         "DisplayName": "App Download Type",
@@ -48,7 +57,10 @@
         "EnumValues": {
             "GitRepo": "Git repo",
             "None": "None (manual)"
-        }
+        },
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": false
     },
     {
         "DisplayName": "Git Repo URL",
@@ -61,7 +73,10 @@
         "ParamFieldName": "DownloadSource",
         "DefaultValue": "",
         "Placeholder": "https://github.com/your-org/edwin.git",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": false
     },
     {
         "DisplayName": "Git Branch",
@@ -73,7 +88,10 @@
         "InputType": "text",
         "ParamFieldName": "DownloadBranch",
         "DefaultValue": "",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": false
     },
     {
         "DisplayName": "Git Username",
@@ -85,7 +103,10 @@
         "InputType": "text",
         "ParamFieldName": "DownloadUsername",
         "DefaultValue": "",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": false
     },
     {
         "DisplayName": "Git Password/Token",
@@ -97,7 +118,10 @@
         "InputType": "password",
         "ParamFieldName": "DownloadPassword",
         "DefaultValue": "",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": false
     },
     {
         "DisplayName": "Node.js Release Stream",
@@ -113,7 +137,10 @@
             "24": "24 - LTS",
             "22": "22 - LTS",
             "20": "20 - LTS (default)"
-        }
+        },
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": false
     },
     {
         "DisplayName": "Node.js Version (pin)",
@@ -126,7 +153,10 @@
         "ParamFieldName": "NodeVersion",
         "DefaultValue": "",
         "Placeholder": "v20.18.0",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": false
     },
     {
         "DisplayName": "Node.js Command Line Arguments",
@@ -139,7 +169,10 @@
         "ParamFieldName": "NodeArgs",
         "DefaultValue": "",
         "Placeholder": "--max-old-space-size=2048",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": false
     },
     {
         "DisplayName": "NODE_ENV",
@@ -154,7 +187,10 @@
         "EnumValues": {
             "production": "production",
             "development": "development"
-        }
+        },
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": false
     },
     {
         "DisplayName": "Run npm install on update",
@@ -169,7 +205,10 @@
         "EnumValues": {
             "False": "false",
             "True": "true"
-        }
+        },
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": false
     },
     {
         "DisplayName": "Run DB migrations on update",
@@ -184,7 +223,10 @@
         "EnumValues": {
             "False": "false",
             "True": "true"
-        }
+        },
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": false
     },
     {
         "DisplayName": "Discord Bot Token",
@@ -196,7 +238,10 @@
         "InputType": "password",
         "ParamFieldName": "DiscordToken",
         "DefaultValue": "",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": true
     },
     {
         "DisplayName": "Discord Guild ID",
@@ -208,7 +253,10 @@
         "InputType": "text",
         "ParamFieldName": "GuildId",
         "DefaultValue": "",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": true
     },
     {
         "DisplayName": "Discord Client ID (optional)",
@@ -220,7 +268,10 @@
         "InputType": "text",
         "ParamFieldName": "DiscordClientId",
         "DefaultValue": "",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": false
     },
     {
         "DisplayName": "Discord Client Secret (optional)",
@@ -232,7 +283,10 @@
         "InputType": "password",
         "ParamFieldName": "DiscordClientSecret",
         "DefaultValue": "",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": false
     },
     {
         "DisplayName": "Web Panel OAuth Redirect (optional)",
@@ -245,7 +299,10 @@
         "ParamFieldName": "WebpanelOauthRedirect",
         "DefaultValue": "",
         "Placeholder": "http://127.0.0.1:3000/auth/callback",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": false
     },
     {
         "DisplayName": "Anthropic API Key",
@@ -257,7 +314,10 @@
         "InputType": "password",
         "ParamFieldName": "AnthropicApiKey",
         "DefaultValue": "",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": true
     },
     {
         "DisplayName": "OpenAI API Key (optional)",
@@ -269,7 +329,10 @@
         "InputType": "password",
         "ParamFieldName": "OpenaiApiKey",
         "DefaultValue": "",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": false
     },
     {
         "DisplayName": "Web Panel Password",
@@ -281,7 +344,10 @@
         "InputType": "password",
         "ParamFieldName": "WebpanelPassword",
         "DefaultValue": "",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": true
     },
     {
         "DisplayName": "Web Panel Session Secret",
@@ -293,7 +359,10 @@
         "InputType": "password",
         "ParamFieldName": "WebpanelSessionSecret",
         "DefaultValue": "",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": true
     },
     {
         "DisplayName": "VS Mod Shared Secret",
@@ -305,7 +374,10 @@
         "InputType": "password",
         "ParamFieldName": "VsModSharedSecret",
         "DefaultValue": "",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": true
     },
     {
         "DisplayName": "VS Mod URL",
@@ -317,7 +389,10 @@
         "InputType": "text",
         "ParamFieldName": "VsModUrl",
         "DefaultValue": "http://127.0.0.1:3002",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": false
     },
     {
         "DisplayName": "Ops Alert Webhook URL (optional)",
@@ -329,7 +404,10 @@
         "InputType": "password",
         "ParamFieldName": "AlertWebhookUrl",
         "DefaultValue": "",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": false
     },
     {
         "DisplayName": "GitHub Token (optional)",
@@ -341,6 +419,9 @@
         "InputType": "password",
         "ParamFieldName": "GithubToken",
         "DefaultValue": "",
-        "EnumValues": {}
+        "EnumValues": {},
+        "IncludeInCommandLine": false,
+        "IsFlagArgument": false,
+        "Required": false
     }
 ]
