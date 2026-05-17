@@ -134,9 +134,9 @@
         "ParamFieldName": "NodeRelease",
         "DefaultValue": "20",
         "EnumValues": {
-            "24": "24 - LTS",
+            "20": "20 - LTS (default)",
             "22": "22 - LTS",
-            "20": "20 - LTS (default)"
+            "24": "24 - LTS"
         },
         "IncludeInCommandLine": false,
         "IsFlagArgument": false,
@@ -427,7 +427,7 @@
     {
         "DisplayName": "Welcome channel ID",
         "Category": "Edwin:smart_toy",
-        "Subcategory": "Channels - Onboarding:waving_hand:9",
+        "Subcategory": "Channels:tag:9",
         "Description": "Channel where Edwin posts welcome messages to new joiners.",
         "Keywords": "cfgchwelcome,cfg_ch_welcome",
         "FieldName": "CfgChWelcome",
@@ -442,7 +442,7 @@
     {
         "DisplayName": "Rules channel ID",
         "Category": "Edwin:smart_toy",
-        "Subcategory": "Channels - Onboarding:waving_hand:9",
+        "Subcategory": "Channels:tag:9",
         "Description": "Channel for server rules (info module posts a pinned embed here).",
         "Keywords": "cfgchrules,cfg_ch_rules",
         "FieldName": "CfgChRules",
@@ -457,7 +457,7 @@
     {
         "DisplayName": "FAQ channel ID",
         "Category": "Edwin:smart_toy",
-        "Subcategory": "Channels - Onboarding:waving_hand:9",
+        "Subcategory": "Channels:tag:9",
         "Description": "Channel for FAQ entries (info module).",
         "Keywords": "cfgchfaq,cfg_ch_faq",
         "FieldName": "CfgChFaq",
@@ -472,7 +472,7 @@
     {
         "DisplayName": "Self-roles channel ID",
         "Category": "Edwin:smart_toy",
-        "Subcategory": "Channels - Onboarding:waving_hand:9",
+        "Subcategory": "Channels:tag:9",
         "Description": "Channel where the self-roles picker is posted.",
         "Keywords": "cfgchselfroles,cfg_ch_self_roles",
         "FieldName": "CfgChSelfRoles",
@@ -487,7 +487,7 @@
     {
         "DisplayName": "Prospects channel ID",
         "Category": "Edwin:smart_toy",
-        "Subcategory": "Channels - Onboarding:waving_hand:9",
+        "Subcategory": "Channels:tag:9",
         "Description": "Channel pending applicants land in before approval.",
         "Keywords": "cfgchprospects,cfg_ch_prospects",
         "FieldName": "CfgChProspects",
@@ -502,7 +502,7 @@
     {
         "DisplayName": "General channel ID",
         "Category": "Edwin:smart_toy",
-        "Subcategory": "Channels - Community:speech_balloon:10",
+        "Subcategory": "Channels:tag:9",
         "Description": "Main community channel.",
         "Keywords": "cfgchgeneral,cfg_ch_general",
         "FieldName": "CfgChGeneral",
@@ -517,7 +517,7 @@
     {
         "DisplayName": "Suggestions channel ID",
         "Category": "Edwin:smart_toy",
-        "Subcategory": "Channels - Community:speech_balloon:10",
+        "Subcategory": "Channels:tag:9",
         "Description": "Channel for community suggestions / voting.",
         "Keywords": "cfgchsuggestions,cfg_ch_suggestions",
         "FieldName": "CfgChSuggestions",
@@ -532,7 +532,7 @@
     {
         "DisplayName": "Events channel ID",
         "Category": "Edwin:smart_toy",
-        "Subcategory": "Channels - Community:speech_balloon:10",
+        "Subcategory": "Channels:tag:9",
         "Description": "Channel where events get posted.",
         "Keywords": "cfgchevents,cfg_ch_events",
         "FieldName": "CfgChEvents",
@@ -547,7 +547,7 @@
     {
         "DisplayName": "Citizenship feed channel ID",
         "Category": "Edwin:smart_toy",
-        "Subcategory": "Channels - Community:speech_balloon:10",
+        "Subcategory": "Channels:tag:9",
         "Description": "Channel where approved citizenship/membership announcements are posted.",
         "Keywords": "cfgchcitizenshipfeed,cfg_ch_citizenship_feed",
         "FieldName": "CfgChCitizenshipFeed",
@@ -562,7 +562,7 @@
     {
         "DisplayName": "Staff-contact channel ID",
         "Category": "Edwin:smart_toy",
-        "Subcategory": "Channels - Staff:lock:11",
+        "Subcategory": "Channels:tag:9",
         "Description": "Parent channel for ticket threads (tickets module).",
         "Keywords": "cfgchstaffcontact,cfg_ch_staff_contact",
         "FieldName": "CfgChStaffContact",
@@ -577,7 +577,7 @@
     {
         "DisplayName": "App-review channel ID",
         "Category": "Edwin:smart_toy",
-        "Subcategory": "Channels - Staff:lock:11",
+        "Subcategory": "Channels:tag:9",
         "Description": "Channel staff use to review pending applications.",
         "Keywords": "cfgchappreview,cfg_ch_app_review",
         "FieldName": "CfgChAppReview",
@@ -592,7 +592,7 @@
     {
         "DisplayName": "Appeals channel ID",
         "Category": "Edwin:smart_toy",
-        "Subcategory": "Channels - Staff:lock:11",
+        "Subcategory": "Channels:tag:9",
         "Description": "Channel for ban / mod-action appeals.",
         "Keywords": "cfgchappeals,cfg_ch_appeals",
         "FieldName": "CfgChAppeals",
@@ -607,7 +607,7 @@
     {
         "DisplayName": "Ops-alerts channel ID",
         "Category": "Edwin:smart_toy",
-        "Subcategory": "Channels - Staff:lock:11",
+        "Subcategory": "Channels:tag:9",
         "Description": "Channel for ops alerts (raid detection, automod flags, system warnings).",
         "Keywords": "cfgchopsalerts,cfg_ch_ops_alerts",
         "FieldName": "CfgChOpsAlerts",
@@ -622,7 +622,7 @@
     {
         "DisplayName": "Mod-log channel ID",
         "Category": "Edwin:smart_toy",
-        "Subcategory": "Channels - Logs:notebook_with_decorative_cover:12",
+        "Subcategory": "Channels:tag:9",
         "Description": "Audit channel for moderation actions (warn/timeout/ban/kick).",
         "Keywords": "cfgchmodlog,cfg_ch_mod_log",
         "FieldName": "CfgChModLog",
@@ -637,7 +637,7 @@
     {
         "DisplayName": "Member-log channel ID",
         "Category": "Edwin:smart_toy",
-        "Subcategory": "Channels - Logs:notebook_with_decorative_cover:12",
+        "Subcategory": "Channels:tag:9",
         "Description": "Audit channel for member joins/leaves and role changes.",
         "Keywords": "cfgchmemberlog,cfg_ch_member_log",
         "FieldName": "CfgChMemberLog",
@@ -652,7 +652,7 @@
     {
         "DisplayName": "Message-log channel ID",
         "Category": "Edwin:smart_toy",
-        "Subcategory": "Channels - Logs:notebook_with_decorative_cover:12",
+        "Subcategory": "Channels:tag:9",
         "Description": "Audit channel for edited/deleted messages.",
         "Keywords": "cfgchmessagelog,cfg_ch_message_log",
         "FieldName": "CfgChMessageLog",
@@ -667,7 +667,7 @@
     {
         "DisplayName": "Server-log channel ID",
         "Category": "Edwin:smart_toy",
-        "Subcategory": "Channels - Logs:notebook_with_decorative_cover:12",
+        "Subcategory": "Channels:tag:9",
         "Description": "Audit channel for server-level changes (channels, roles, settings).",
         "Keywords": "cfgchserverlog,cfg_ch_server_log",
         "FieldName": "CfgChServerLog",
@@ -682,7 +682,7 @@
     {
         "DisplayName": "App-log channel ID",
         "Category": "Edwin:smart_toy",
-        "Subcategory": "Channels - Logs:notebook_with_decorative_cover:12",
+        "Subcategory": "Channels:tag:9",
         "Description": "Audit channel for application submissions/decisions.",
         "Keywords": "cfgchapplog,cfg_ch_app_log",
         "FieldName": "CfgChAppLog",
@@ -697,7 +697,7 @@
     {
         "DisplayName": "Ticket-log channel ID",
         "Category": "Edwin:smart_toy",
-        "Subcategory": "Channels - Logs:notebook_with_decorative_cover:12",
+        "Subcategory": "Channels:tag:9",
         "Description": "Audit channel for ticket lifecycle events.",
         "Keywords": "cfgchticketlog,cfg_ch_ticket_log",
         "FieldName": "CfgChTicketLog",
@@ -712,7 +712,7 @@
     {
         "DisplayName": "VS-log channel ID",
         "Category": "Edwin:smart_toy",
-        "Subcategory": "Channels - Vintage Story:videogame_asset:13",
+        "Subcategory": "Channels:tag:9",
         "Description": "Audit channel for VS server events.",
         "Keywords": "cfgchvslog,cfg_ch_vs_log",
         "FieldName": "CfgChVsLog",
@@ -727,7 +727,7 @@
     {
         "DisplayName": "VS-status channel ID",
         "Category": "Edwin:smart_toy",
-        "Subcategory": "Channels - Vintage Story:videogame_asset:13",
+        "Subcategory": "Channels:tag:9",
         "Description": "Channel where VS online/offline status is posted.",
         "Keywords": "cfgchvsstatus,cfg_ch_vs_status",
         "FieldName": "CfgChVsStatus",
@@ -742,7 +742,7 @@
     {
         "DisplayName": "VS-bridge channel ID",
         "Category": "Edwin:smart_toy",
-        "Subcategory": "Channels - Vintage Story:videogame_asset:13",
+        "Subcategory": "Channels:tag:9",
         "Description": "Channel that bridges Discord<->VS in-game chat.",
         "Keywords": "cfgchvsbridge,cfg_ch_vs_bridge",
         "FieldName": "CfgChVsBridge",
@@ -757,7 +757,7 @@
     {
         "DisplayName": "VS-updates channel ID",
         "Category": "Edwin:smart_toy",
-        "Subcategory": "Channels - Vintage Story:videogame_asset:13",
+        "Subcategory": "Channels:tag:9",
         "Description": "Channel where VS server update notifications post.",
         "Keywords": "cfgchvsupdates,cfg_ch_vs_updates",
         "FieldName": "CfgChVsUpdates",
@@ -772,7 +772,7 @@
     {
         "DisplayName": "VS-help channel ID",
         "Category": "Edwin:smart_toy",
-        "Subcategory": "Channels - Vintage Story:videogame_asset:13",
+        "Subcategory": "Channels:tag:9",
         "Description": "Channel for VS gameplay help / FAQ.",
         "Keywords": "cfgchvshelp,cfg_ch_vs_help",
         "FieldName": "CfgChVsHelp",
